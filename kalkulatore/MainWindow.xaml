@@ -1,0 +1,57 @@
+﻿<Window x:Class="kalkulatore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kalkulatore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="350" Background="Azure"
+        MouseDown="Window_MouseDown"
+        AllowsTransparency="True"
+        WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="PanelTbx" Grid.ColumnSpan="10" Grid.RowSpan="2" Margin="60,22,60,18" Background="White" RenderTransformOrigin="0.598,0.549" TextChanged="PanelTbx_TextChanged"  ></TextBox>
+        <Button x:Name="OneBtn"  Grid.Row="4" Grid.Column="5" Margin="5" Click="OneBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">1</Button>
+        <Button  x:Name="TwpBtn"  Grid.Row="5" Grid.Column="5" Margin="5" Click="TwpBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" >2</Button>
+        <Button   x:Name="ThrBtn" Grid.Row="6" Grid.Column="5" Margin="5" Click="ThrBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">3</Button>
+        <Button   x:Name="FourBtn" Grid.Row="4" Grid.Column="6" Margin="5" Click="FourBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">4</Button>
+        <Button  x:Name="FiveBtn"  Grid.Row="5" Grid.Column="6" Margin="5" Click="FiveBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">5</Button>
+        <Button   x:Name="SixBtn" Grid.Row="6" Grid.Column="6" Margin="5" Click="SixBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">6</Button>
+        <Button   x:Name="SevBtn" Grid.Row="4" Grid.Column="7" Margin="5" Click="SevBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">7</Button>
+        <Button   x:Name="EchBtn" Grid.Row="5" Grid.Column="7" Margin="5" Click="EchBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White">8</Button>
+        <Button   x:Name="NineBtn" Grid.Row="6" Grid.Column="7" Margin="5" Click="NineBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" >9</Button>
+        <Button   x:Name="ZapBtn" Grid.Row="9" Grid.Column="7" FontSize="20" Margin="5" Click="ZapBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="White" >,</Button>
+        <Button    x:Name="ZeroBtn"  Grid.Row="9" Grid.Column="5" Grid.ColumnSpan="2" Margin="5" Click="ZeroBtn_Click" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Background="White" >0</Button>
+        <Button   x:Name="DelBtn" Grid.Row="4" Grid.Column="8" Margin="5" FontSize="15" Background="White" Click="DelBtn_Click">/</Button>
+        <Button   x:Name="UmnBtn" Grid.Row="5" Grid.Column="8" Margin="5" FontSize="15" Background="White" Click="UmnBtn_Click">*</Button>
+        <Button   x:Name="PlusBtn" Grid.Row="6" Grid.Column="8" Margin="5" FontSize="15" Click="PlusBtn_Click" Background="White">+</Button>
+        <Button   x:Name="MinesBtn" Grid.Row="9" Grid.Column="8" Margin="5" FontSize="15" Background="White" Click="MinesBtn_Click" >-</Button>
+        <Button   x:Name="ProcBtn" Grid.Row="4" Grid.Column="9" Margin="5" FontSize="15" Background="White" Click="ProcBtn_Click" >%</Button>
+        <Button   x:Name="ObrBtn" Grid.Row="5" Grid.Column="9" Margin="5" FontSize="15" Background="White" >1/x</Button>
+        <Button   x:Name="RavnBtn" Grid.Row="6" Grid.Column="9" Margin="5" FontSize="15" Grid.RowSpan="2" Click="RavnBtn_Click" Background="White">=</Button>
+        <Button   x:Name="KorBtn" Grid.Row="4" Grid.Column="4" Margin="5" FontSize="15" Background="White">√</Button>
+        <Button   x:Name="ClearBtn" Grid.Row="3" Grid.Column="5" Margin="5" FontSize="20" Background="White" Grid.ColumnSpan="5" Click="ClearBtn_Click">CLEAR</Button>
+    </Grid>
+</Window>
